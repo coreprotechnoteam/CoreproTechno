@@ -1,0 +1,264 @@
+ :root {
+  --sky-blue: #8ec5fc;
+  --light-sky: #e0f2ff;
+  --soft-gray: #f8f9fa;
+  --dark-text: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: var(--dark-text);
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+.nav-link {
+  color: var(--dark-text) !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: var(--sky-blue) !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, var(--sky-blue), var(--light-sky));
+  padding: 140px 0 80px;
+  text-align: center;
+  color: white;
+}
+.hero-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+/* Cards */
+.card-custom {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(142, 197, 252, 0.2);
+  transition: all 0.3s ease;
+}
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(142, 197, 252, 0.3);
+}
+/* Freelancer Image - default (mobile) */
+.freelancer-photo {
+  width: 70%;           /* smaller size on mobile */
+  max-width: 300px;     /* limit image size */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Freelancer Section Background */
+.freelancer-image {
+  background-color: var(--light-sky);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Laptop/Desktop view - make image bigger */
+@media (min-width: 992px) {
+  .freelancer-photo {
+    width: 20%;         /* bigger on laptop */
+    max-width: 800px;   /* allow large display */
+  }
+}
+ /* Card Styling */
+  .freelancer-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .freelancer-card:hover {
+    background: #e6f0ff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .freelancer-card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .freelancer-card ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .freelancer-card li {
+    margin-bottom: 6px;
+  }
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  /* Icon Glow on Hover */
+  .service-card i {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .service-card:hover i {
+    text-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+
+  /* Icon Colors */
+  .icon-color-primary { color: #0d6efd; }
+  .icon-color-success { color: #198754; }
+  .icon-color-info { color: #0dcaf0; }
+  .icon-color-warning { color: #ffc107; }
+
+  /* Paragraphs */
+  .service-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+/* Buttons */
+.btn-bts {
+  background: linear-gradient(90deg, var(--sky-blue), #4facfe);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn-bts:hover {
+  background: linear-gradient(90deg, #6eb5ff, #3da4fc);
+  color: white;
+}
+
+.custom-btn {
+  background-color: white;
+  color: #25D366; /* WhatsApp green */
+  border: 2px solid #25D366;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background-color: #e6f2ff; /* Light blue hover */
+  color: #005fcc;
+  border-color: #005fcc;
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: var(--soft-gray);
+  padding: 20px 0;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+ .custom-btn {
+  background-color: white;
+  color: #25D366; /* WhatsApp green */
+  border: 2px solid #25D366;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background-color: #e6f2ff; /* Light blue hover */
+  color: #005fcc;
+  border-color: #005fcc;
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.3);
+  transform: translateY(-2px);
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+.custom-btn {
+  background-color: white;
+  color: #0078ff; /* Elegant blue text */
+  border: 2px solid #0078ff;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 12px 28px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.custom-btn:hover {
+  background-color: #e6f2ff; /* Light blue hover */
+  color: #005fcc;
+  border-color: #005fcc;
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 576px) {
+  .custom-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
