@@ -47,6 +47,24 @@ body {
   font-size: 3rem;
   font-weight: 700;
 }
+.hero-logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0094FF, #FF2C2C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.hero p {
+  font-size: 1.6rem;
+  color: #6a0808; /* normal dark text */
+}
 
 /* Sections */
 .section {
@@ -261,4 +279,5 @@ footer {
     width: 100%;
   }
 }
+
 
