@@ -291,6 +291,13 @@ footer {
   .btn-primary:hover {
     transform: scale(1.05);
   }
+ /* footer*/
+.gradient-text {
+  background: linear-gradient(350deg, rgb(23, 4, 90), #ba3e14, #2e0303); /* Blue to Red gradient from logo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
 
   /* Floating Shapes */
   .floating-shape {
@@ -336,6 +343,7 @@ footer {
     50% { transform: translateY(-25px) translateX(20px); }
     100% { transform: translateY(0) translateX(0); }
   }
+
 
 
 
